@@ -1,0 +1,153 @@
+@import url(https://fonts.googleapis.com/css?family=Old+Standard+TT:400,400italic,700);
+
+$secondarycolor: #353638;
+
+::selection {color:#fff;background:$secondarycolor;}
+::-moz-selection {color:#fff;background:$secondarycolor;}
+
+
+.userCard {
+  height: 17.77em;
+  width: 13.45em;
+  position: relative;
+  background: #202020;
+  text-align: left;
+  color: #fff;
+  padding: 1em;
+  font-size: 14px;
+  
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 10px solid #202020;
+    border-left: 10px solid #565759;
+    width: 0;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-bottom: 10px solid #565759;
+    border-left: 10px solid #202020;
+    width: 0;
+  }
+
+  .top {
+    position: relative;
+    padding-bottom: .62em;	
+    
+    .userImage {
+      background: #000;
+      border-radius: 50%;
+      width: 4em;
+      height: 4em;
+    }		
+  }
+  
+  .nametroduction {
+    padding-top: .2em;
+    padding-bottom: .2em;
+    position: relative;
+    
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: .01em;
+      background: $secondarycolor;  
+    }
+    
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: .01em;
+      background: $secondarycolor;
+    }
+    
+    .name {			
+      // font-weight: 400;
+      font-size: 1em;
+      font-family: 'Inconsolata', monospace;
+
+    }
+    
+    .role {
+      font-size: .8em;
+    }
+  }
+  
+  .contact {
+    padding-top: 0.8em;
+    
+    .personalData {
+      padding-bottom: .8em;
+      font-size: .8em;
+      
+      p {
+        display: inline-block;
+      }
+
+      :first-child {
+        padding-right: .2em;
+      }
+    }
+  
+    .bottom {
+      position: relative;
+      padding-top: 0.6em;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: .01em;
+        background: $secondarycolor;
+      }
+
+      .personalData {
+        padding-bottom: 0;
+        padding-top: 0;
+        
+        div {
+          color: #00FFC4;
+        }
+      }
+      
+      div, p {
+        display: inline-block;
+      }
+      
+      p {
+        border-bottom: .1em solid #fff;
+        
+        &:hover {
+          cursor: pointer;
+          color: #00FFC4;
+        }
+      }
+  
+      .deleteBtn {
+        font-size: .8em;
+        cursor: pointer;
+        position: absolute;
+        right: 0;    
+        bottom: 0;
+        color: #858585;
+        
+        &:hover {
+          color: #00FFC4;
+        }         
+      }
+    }
+  }
+}
+
+  

@@ -1,0 +1,27 @@
+.sideBar {
+  background: #000;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 3em;
+}
+
+.fas {
+  position: absolute;
+  color: rgb(201, 196, 196);
+  font-size: 1.4em;
+  bottom: 1em;
+  right: .5em;
+  &:hover {
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
+hr {
+  position: absolute;
+  bottom: 4em;
+  width: 80%;
+  margin-left: .3em;
+  opacity: 0.6;
+}
